@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book — Cairn & Co. Edinburgh</title>
+<meta name="description" content="Book a treatment at Cairn & Co. — Edinburgh's quietest luxury day spa. We'll confirm your appointment within one working day." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="home.html" class="brand">Cairn &amp; Co.<small>Edinburgh</small></a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="treatments.html">Treatments</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="book.html" class="active">Book</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="book.html" class="btn btn-outline btn-sm">Book Now</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <span class="eyebrow">Reservations</span>
+  <h1>Book a treatment</h1>
+  <p>Send us your preferred date, time and treatment. We'll confirm by email or phone within one working day.</p>
+</section>
+
+<section class="section">
+  <div class="container book-grid fade-in">
+    <div>
+      <div class="form-success">
+        <strong>Thank you.</strong> Your request has been received. We'll be in touch within one working day to confirm your appointment.
+      </div>
+      <form id="booking-form" novalidate>
+        <div class="form-row split">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="treatment">Treatment</label>
+          <select id="treatment" name="treatment" required>
+            <option value="">Select a treatment</option>
+            <optgroup label="Facials">
+              <option>Heather &amp; Honey Facial — 75 min · £135</option>
+              <option>Sea Kelp Brightening Facial — 75 min · £140</option>
+              <option>Rosehip Restorative Facial — 90 min · £155</option>
+              <option>The Bespoke Facial — 90 min · £165</option>
+            </optgroup>
+            <optgroup label="Body">
+              <option>Sea Kelp Body Wrap — 80 min · £145</option>
+              <option>Heather Body Polish — 60 min · £110</option>
+              <option>Highland Spring Hydration Ritual — 75 min · £130</option>
+              <option>Mother-to-Be Ritual — 75 min · £140</option>
+            </optgroup>
+            <optgroup label="Massage">
+              <option>Highland Hot Stone — 90 min · £160</option>
+              <option>Deep Tissue Restorative — 75 min · £135</option>
+              <option>Aromatherapy Slow Massage — 90 min · £150</option>
+              <option>Head, Neck &amp; Shoulders — 45 min · £85</option>
+            </optgroup>
+            <optgroup label="Couples & Duo">
+              <option>Two-Person Hot Stone Suite — 90 min · £310</option>
+              <option>The Together Ritual — 120 min · £395</option>
+            </optgroup>
+            <optgroup label="Hands & Feet">
+              <option>Botanical Pedicure — 60 min · £75</option>
+              <option>Hand &amp; Arm Ritual — 45 min · £60</option>
+              <option>Reflexology — 60 min · £85</option>
+            </optgroup>
+            <optgroup label="Signature">
+              <option>The Cairn Ritual — 180 min · £295</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-row split">
+          <div>
+            <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div>
+            <label for="time">Preferred Time</label>
+            <select id="time" name="time" required>
+              <option value="">Select a time</option>
+              <option>9:00 am</option><option>10:00 am</option>
+              <option>11:00 am</option><option>12:00 pm</option>
+              <option>1:00 pm</option><option>2:00 pm</option>
+              <option>3:00 pm</option><option>4:00 pm</option>
+              <option>5:00 pm</option><option>6:00 pm</option>
+              <option>7:00 pm</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="therapist">Therapist Preference</label>
+          <select id="therapist" name="therapist">
+            <option>No preference</option>
+            <option>Fiona Mackay</option>
+            <option>Isla Robertson</option>
+            <option>Catriona Bell</option>
+            <option>Hamish Grant</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Notes (anything we should know)</label>
+          <textarea id="notes" name="notes" placeholder="Allergies, pregnancy, areas of tension, special occasion…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold">Request Appointment</button>
+      </form>
+    </div>
+
+    <aside>
+      <div class="info-card">
+        <h3>Visit</h3>
+        <p>24 Heriot Row<br/>Edinburgh, EH3 6ES</p>
+        <p style="margin-top: 1rem;"><a href="tel:01315574820" style="color: var(--forest);">0131 557 4820</a><br/><a href="mailto:hello@cairnandco.co.uk" style="color: var(--forest);">hello@cairnandco.co.uk</a></p>
+        <ul class="info-list" style="margin-top: 1rem;">
+          <li><span>Mon – Fri</span><span>9am – 8pm</span></li>
+          <li><span>Saturday</span><span>9am – 7pm</span></li>
+          <li><span>Sunday</span><span>10am – 5pm</span></li>
+        </ul>
+        <div class="map-wrap">
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=24+Heriot+Row+Edinburgh+EH3+6ES&output=embed"></iframe>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>Before You Arrive</h3>
+        <p>Please plan to arrive 15 minutes before your treatment. This gives you time to change, sit with a herbal tea, and settle into the building before we begin.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Cancellation</h3>
+        <p>We ask for at least 24 hours' notice for any cancellation or change. Inside that window the full treatment fee may apply.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Gift Vouchers</h3>
+        <p>Looking for a gift? Vouchers are available for any value or treatment, posted in a hand-tied package anywhere in the UK. Mention "gift voucher" in the notes above or <a href="mailto:hello@cairnandco.co.uk" style="color: var(--forest); text-decoration: underline;">email us directly</a>.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Cairn &amp; Co.</h4>
+        <p>An independent luxury day spa in a Georgian townhouse on Edinburgh's New Town. Rooted in Scottish botanicals, unhurried by design.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>24 Heriot Row<br/>Edinburgh, EH3 6ES</p>
+        <p style="margin-top: 1rem;"><a href="tel:01315574820">0131 557 4820</a><br/><a href="mailto:hello@cairnandco.co.uk">hello@cairnandco.co.uk</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Fri · 9am – 8pm</li>
+          <li>Saturday · 9am – 7pm</li>
+          <li>Sunday · 10am – 5pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="treatments.html">Treatments</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="book.html">Book</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Cairn &amp; Co. · All rights reserved</div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
