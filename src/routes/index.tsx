@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   if (typeof window !== "undefined") {
-    window.location.replace("/home.html");
+    window.location.replace("/index.html");
   }
   return null;
 }
